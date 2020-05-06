@@ -31,7 +31,7 @@ class PitchTest(unittest.TestCase):
         '''
 
         self.user = User(username='james', password='james55',
-                         email='jamesgathuru001@gmail.com')
+                         email='james001@gmail.com')
         self.new_comment = Comment(
             comment='comment', pitch_id=1, user_id=self.user)
         self.new_pitch = Pitch(id=1, title="Pitch", body='pitches',
