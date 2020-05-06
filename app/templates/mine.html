@@ -11,7 +11,7 @@
 <a href="{{url_for('main.upvote',pitch_id = pitch.id)}}"><i
         class="fas fa-heart"></i>Upvoting<span>{{pitch.upvotes.count()}}</span></a>
 <a href="{{url_for('main.downvote',pitch_id = pitch.id)}}"><i
-        class="fal fa-heartbeat"></i>Downvote<span>{{pitch.downvotes.count()}}</span></a>
+        class="fal fa-heartbeat"></i>Downvoting<span>{{pitch.downvotes.count()}}</span></a>
 <div class="panel-footer"><a href="{{url_for('main.new_comment',pitch_id = pitch.id)}}"> Add a comment</a>
 
     {% endfor %}
