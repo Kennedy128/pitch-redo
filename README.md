@@ -1,36 +1,57 @@
-PITCH-REDO
+Pitchd
+Description
+A flask-based application that allows users to post elevator pitches, get and give feedback on the pitches.
 
-DESCRIPTION
-it is an application that enables a user to log into an account or create his or her own account if he doesnt have an account.choose the category of pitch he or she wants ,upvote or downvote on it and leave a comment as long as the use is logged in
+By https://github.com/Kennedy128/pitch-redo
+Setup/Installation Requirements
+Prerequisites
+python3.8
+pip
+Virtual environment(virtualenv)
+Flask-Mail
+PostgreSQL
+Cloning and running
+Clone the application using git clone(this copies the app onto your device). In your terminal:
+$ git clone https://github.com/Kennedy128/pitch-redo
 
-AUTHOR
-KENNEDY MBITHI MUTIA
+$ cd pitch
 
-SETUP/INSTALLATION REQUIREMENT
-1)fork the data onto your own personal repository
-2)clone project to your own local machine
-3)activate the virtual environment on terminal using source virtual/bin/activate
-4)install all the requirements found in the requirement files
-5)on your terminal run chmod a+x start.py
-6)on your terminal run ./start.py
-7)access the live site using localhost provided or you can access it at the top of my repo
+Creating the virtual environment
+Use the following commands in your terminal to create virtual environment
+$ python3.8 -m venv --without-pip virtual
 
-DEPENDANCIES
-1)pip
-2)check my requirement.txt files to get more of the dependancies
+$ source virtual/bin/env
 
-TECHNOLOGIES USED
-1)python3.6
-2)a virtual environment with flask installed in it
-3)bootstrap and css for perfoming styling
+$ curl https://bootstrap.pypa.io/get-pip.py | python
 
-KNOWN BUGS
-for 1st time users,sign in button doesnt work effectively and requires one to continously press on it so that it works.key in my credentials and press it severally and continously or use enter button on the password continously..do this continously even if the it gives you error message and it will surely work and also the sign up section is not working
+Installing Flask and other Modules
+$ python3.8 -m pip install Flask
 
-SUPPORT AND CONTACT DETAILS
-email kennedymbithi12@gmail.com
+$ python3.8 -m pip install Flask-Bootstrap
 
-LICENCE AND COPYRIGHT DETAILS
-the project is licenced under under the terms of the MIT licence copyright(k2020)kennedy mbithi permission is hereby granted,free of charge,to any person obtaining a copy of this software and associated documentation files(th software)to deal in software without restriction including without limitation of the right to use,copy,modify,merge,publish,distribute,sublicence and or sell copies of software and to permit persons to whom the software is furnished to do so subject to the following conditions the above copyright notice and this permission norice shall be included in all copies or substantial portion of software
+$ python3.8 -m pip install Flask-Script
 
-THE SOFTWARE IS PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND EXPRESS OR IMPLIFIED INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY.FITNESS FOR A PARTICULAR PURPOSE AND NON NONINFRINGMENT IN NO EVENT SHALL THE AUTHOR OF THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM DAMAGE OR OTHER LIABILITY WHETHER IN ACTION OF CONTRACT ,TORT OR OTHERWISE ARISING FROM OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USER OR OTHER DEALING IN THE SOFTWARE
+$ python3.8 -m pip install Flask-Mail
+
+Testing the Application
+To run the tests for the class files:
+$ python3.8 manage.py test
+
+Technologies Used
+Python 3.8
+Flask
+BDD
+Behavior	Input Example	Output
+User Sort Preference	Category	Sorted Pitches by Categories
+Send user to email to confirm sign up	Click 'sign up'	Send email
+Show pitches from other users	select a specific category	List pitches
+Enable user to give reviews and feedback for a pitch	Click 'new review'	written user review
+Enable vote for a pitch	Click 'like' or 'dislike'	user vote
+Enable user write a pitch	Click 'new pitch'	written user pitch
+#Live Site *Can be accessed here https://ken-pitch.herokuapp.com/
+
+Author's Contact
+If you need any clarifications or have feedback on this project , contact the author at kennedymbithi12@gmail.com
+
+License
+This software is Licensed under MIT license Copyright (2018) https://raw.githubusercontent.com/Kennedy128/pitch-redo/master/LICENSE

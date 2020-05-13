@@ -5,7 +5,7 @@ from app.models import User
 class UserModelTest(unittest.TestCase):
 
     def setUp(self):
-        self.new_user = User(password='james55')
+        self.new_user = User(password='anything')
 
     def test_password_setter(self):
         self.assertTrue(self.new_user.pass_secure is not None)
@@ -15,7 +15,7 @@ class UserModelTest(unittest.TestCase):
             self.new_user.password
 
     def test_password_verification(self):
-        self.assertTrue(self.new_user.verify_password('james55'))
+        self.assertTrue(self.new_user.verify_password('anything'))
 
         import unittest
 
@@ -30,8 +30,8 @@ class PitchTest(unittest.TestCase):
         Set up method that will run before every Test
         '''
 
-        self.user = User(username='james', password='james55',
-                         email='james001@gmail.com')
+        self.user = User(username='Kennedy128', password='0711468410',
+                         email='kennedymbithi12@gmail.com.com')
         self.new_comment = Comment(
             comment='comment', pitch_id=1, user_id=self.user)
         self.new_pitch = Pitch(id=1, title="Pitch", body='pitches',
@@ -58,3 +58,4 @@ class PitchTest(unittest.TestCase):
         self.new_pitch.save_pitch()
         get_pitches = Pitch.get_pitch(1)
         self.assertTrue(len(get_pitches) == 1)
+© 2020 GitHub, Inc.
