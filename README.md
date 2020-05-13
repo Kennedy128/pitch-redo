@@ -25,20 +25,20 @@ $ source virtual/bin/env
 $ curl https://bootstrap.pypa.io/get-pip.py | python
 
 Installing Flask and other Modules
-$ python3.8 -m pip install Flask
+$ python3.6 -m pip install Flask
 
-$ python3.8 -m pip install Flask-Bootstrap
+$ python3.6 -m pip install Flask-Bootstrap
 
-$ python3.8 -m pip install Flask-Script
+$ python3.6 -m pip install Flask-Script
 
-$ python3.8 -m pip install Flask-Mail
+$ python3.6 -m pip install Flask-Mail
 
 Testing the Application
 To run the tests for the class files:
-$ python3.8 manage.py test
+$ python3.6 manage.py test
 
 Technologies Used
-Python 3.8
+Python 3.6
 Flask
 BDD
 Behavior	Input Example	Output
